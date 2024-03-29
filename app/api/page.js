@@ -9,8 +9,9 @@ export default async function handler(request, response) {
       <h1>API List</h1>
 
       <h1>
-        <br></br>
-        {results.map((result) => (<div>{result.api}</div>))} 
+        <ul>
+        {results.map((result) => (<li>{result.api}</li>))} 
+		</ul>
       </h1>
     </>
   );//return
