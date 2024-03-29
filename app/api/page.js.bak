@@ -2,7 +2,7 @@ import { sql } from '@vercel/postgres';
 
 export default async function handler(request, response) {
 
-    const results = await sql`SELECT * FROM "kp-project6";`;
+    const results = await sql`SELECT * FROM "apilist";`;
 
  return (
     <>
@@ -10,7 +10,7 @@ export default async function handler(request, response) {
 
       <h1>
         <br></br>
-        { your_object_list_here } 
+        { results } 
       </h1>
     </>
   );//return
