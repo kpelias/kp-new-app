@@ -2,7 +2,7 @@ import { sql } from '@vercel/postgres';
 
 export default async function handler(request, response) {
 
-    const results = await sql`SELECT * FROM "your_database_table_name_here";`;
+    const results = await sql`SELECT * FROM "kp-project6";`;
 
  return (
     <>
