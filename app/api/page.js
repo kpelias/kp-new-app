@@ -2,7 +2,7 @@ import { sql } from '@vercel/postgres';
 
 export default async function handler(request, response) {
 
-    const { results } = await sql`SELECT * FROM "apilist";`;
+    const { rows: results } = await sql`SELECT * FROM "apilist";`;
 
  return (
     <>
