@@ -10,7 +10,7 @@ export default async function handler(request, response) {
 
       <h1>
         <br></br>
-        { results } 
+        {results.map(api => <div>{results.api}</div>)} 
       </h1>
     </>
   );//return
